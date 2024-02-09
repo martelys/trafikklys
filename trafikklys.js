@@ -6,6 +6,7 @@ function main() {
     redlight = document.getElementById("redlight")
     orangelight = document.getElementById("orangelight")
     greenlight = document.getElementById("greenlight")
+    skru_på_kun_en(redlight)
 }
 
 function skru_av_lys(lys) {
