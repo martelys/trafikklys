@@ -5,16 +5,18 @@
     <link rel="stylesheet" href="trafikklys.css" />
     <script src="trafikklys.js"></script>
   </head>
-  <body>
+  <body onload="main()">
     <div id="trafikklys-boks" class="center">
-      <div class="trafikklys red"></div>
-      <div class="trafikklys orange"></div>
-      <div class="trafikklys green"></div>
+      <div class="trafikklys red" id="redlight"></div>
+      <div class="trafikklys orange" id="orangelight"></div>
+      <div class="trafikklys green" id="greenlight"></div>
     </div>
     <div class="center" id="buttons">
-      <button class="red">red</button>
-      <button class="orange">orange</button>
-      <button class="green">green</button>
+      <button onclick="skru_på_kun_en(redlight)" class="red">red</button>
+      <button onclick="skru_på_kun_en(orangelight)" class="orange">
+        orange
+      </button>
+      <button onclick="skru_på_kun_en(greenlight)" class="green">green</button>
     </div>
   </body>
 </html>
